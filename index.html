@@ -19,9 +19,9 @@
 <body>
 
     <nav>
-        <div class="nav-wrapper black">
+        <div class="nav-wrapper">
           <ul id="nav-mobile" class="hide-on-med-and-down">
-            <li><a href="#start">Home</a></li>
+            <li><a href="#start"><i class="material-icons white-text">home</i></a></li>
             <li><a href="#abstract">1. Intro</a></li>
             <li><a href="#lit">2. Literature</a></li>
             <li><a href="#mistral">3. Mistral</a></li>
@@ -38,8 +38,10 @@
  
     <section class="hidden container" id="start">
         <br><br>
-        <h1 style="font-size: 100px;">Critical Machine Learning:</h1>
-        <h2><i>interpreting algorithms of oppression</i></h2>
+        <div class="z-depth-5 container" style="width: 500; height: 500px;" id="glass">
+                
+            <h1 class="title center">CRITICAL <br>MACHINE <br>LEARNING</h1>
+        </div>
         <a class="btn-floating btn-large waves-effect waves-light transparent right" href="#abstract"><i class="material-icons white-text">arrow_forward</i></a>
     </section>
 
@@ -53,16 +55,92 @@
             <a class="btn-floating btn-large waves-effect waves-light transparent right" href="#lit"><i class="material-icons white-text">arrow_forward</i></a>
     </section>
 
-    <section class="hidden container" id="lit">
+    <section class="hidden container"id="lit">
         <br><br>
         <h1>key literature</h1>
-       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet debitis non error numquam harum facilis laudantium itaque, asperiores voluptatem ipsum vero, placeat quaerat optio reprehenderit consectetur quasi enim obcaecati quas.</p>
+        <p>click on a citation to view annotations!</p>
+
+        <ul class="collapsible">
+            <li>
+                <div class="collapsible-header grey lighten-3 black-text"><p id="cite">Bender, Emily M., et al. “On the dangers of stochastic parrots.” Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency, Mar. 2021, https://doi.org/10.1145/3442188.3445922. </p></div>
+                <div class="collapsible-body"><p class="blockquote" id="glass">“an LM is a system for haphazardly stitching together sequences of linguistic forms it has observed in its vast training data, according to probabilistic information about how they combine, but without any reference to meaning: a stochastic parrot.” (615)
+                </p><span id="annotation">The authors define a language model as referring to systems which are trained on string prediction tasks. While the move towards word embeddings in supervised NLP tasks reduced the amount of labeled training data necessary,
+                     transformer models “continuously benefit from larger architectures and larger quantities of data” (611). They argue that language models continuously scale in regards to the size of training data and what spheres they impact– both of these types of growth carry particular types of risk. First, is the environmental
+                      and financial cost. They explain that while the average human is responsible for about 5t in CO2 emissions per year, training a transformer model (in 2020) emitted  284t of CO2. They note that the negative externalities of climate change impact the most marginalized communities first– those that most language 
+                      technology is simply not built to serve. <br> <br>The paper goes on to problematize commonly used training data: how uncurated, Internet-based datasets encode a worldview that further alienates people at the margins. The paper refutes the idea that “largeness” in the training dataset correlates to diversity or fairness. 
+                      Internet access in unequally distributed, and commonly scraped sources of data such as Reddit, Twitter, and Wikipedia have incredibly unequal user bases. Filtering training data can often amplify exclusion. In the case of GPT-3, training data was filtered out if it was too dissimilar to GPT-2’s training data. 
+                      The act of training on past data can cause “value-lock,” where the model learns from and thus reifies older and less inclusive ways of being and knowing. The authors emphasize the necessity of being intentional and curatorial with what is included in training data, rather than training at the largest scale possible
+                       and attempting to weed out “bad” data. The article goes on to explain that as humans, our communication relies on some interpretation of implicit meaning, or a shared common ground. In the case of machine language, the comprehension of this implicit meaning is simply an “illusion” (616). There are subtle forms of bias, encoded into training data, that cannot be filtered out. This risks the generation of more biased text, “stochastically parroted” with the illusion of coherence and meaning.</span></div>
+            </li>
+
+            <li>
+                <div class="collapsible-header grey lighten-4 black-text"><p id="cite">Birhane, Abeba, Vinay Uday Prabhu, and Emmanuel Kahembwe. "Multimodal datasets: misogyny, pornography, and malignant stereotypes." arXiv preprint arXiv:2110.01963 (2021).</p></div>
+                <div class="collapsible-body"><span id="annotation">Lorem ipsum dolor sit amet.</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header grey lighten-3 black-text"><p id="cite">Chun, Wendy Hui Kyong. Programmed Visions: Software and Memory. Cambridge: MIT Press, 2011.</p></div>
+                <div class="collapsible-body"><span id="annotation">Lorem ipsum dolor sit amet.</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header grey lighten-4 black-text"><p id="cite">Dobson, James E. The Birth of Computer Vision. University of Minnesota Press, 2023.</p></div>
+                <div class="collapsible-body"><span id="annotation">Lorem ipsum dolor sit amet.</span></div>
+            </li>
+            
+            <li>
+                <div class="collapsible-header grey lighten-3 black-text"><p id="cite">Dobson, J.E. On reading and interpreting black box deep neural networks. Int J Digit Humanities 5, 431–449 (2023). https://doi.org/10.1007/s42803-023-00075-w.</p></div>
+                <div class="collapsible-body"><span id="annotation">Lorem ipsum dolor sit amet.</span></div>
+            </li>
+            <li>
+              <div class="collapsible-header grey lighten-4 black-text"><p id="cite">Elam, Michele. “Poetry will not optimize; or, what is literature to AI?” American Literature, vol. 95, no. 2, 17 Mar. 2023, pp. 281–303, https://doi.org/10.1215/00029831-10575077. </p></div>
+              <div class="collapsible-body"><div id="glass">AI, like all technologies, is a crucible of our world views, our social priorities, commitments, investments, and aspirations. As such, perhaps one of its greatest usesis to allow it to reflect us back to ourselves (295)</div><span id="annotation">Elam argues that AI-generated and augmented literature cannot be dismissed. Although writing generated by LLMs can sometimes seem eerily similar to what a human might produce, there are key distinctions. The “database” cannot tolerate data that is indeterminate, unspeakable, though that is precisely what narrative seeks to reveal. The computer embodies the “view from nowhere”— it is implied to be omniscient and ahistorical, while the human narrative acknowledges the subjective view, grounded by context and place. The first section of the text recounts the “literary consequences of algorithmic ahistoricity.” Literature does not represent history as a linear series of data points, but as a “palimpsest,” or an “ongoing  and dynamic negotiation between pasts and presents” (Elam 286). Conversely, the data used in training sets is reduced to something the computer can interpret. For instance, when GPT-3 was asked to continue lines of a Maya Angelou poem, the output was a mishmash of Black vernacular across periods of time and expressions that were incoherent together. Language is significant because it carries a certain frame of existence. It “indexes experience, and form takes the shape of its need” (Elam 288). AI generated language reduces the reader’s ability to see and understand their own realities and experiences. It can perhaps perform literature, but cannot capture its meaning. AI databases present “neutral descriptions of the world rather than its own world.” (Elam 292). The world that AI portrays is one of many: with an embedded ontology and epistemology that cannot simply stand in for the world as a whole.
+            </span></div>
+            
+            </li>
+            <li>
+                <div class="collapsible-header grey lighten-3 black-text"><p id="cite">Elam, Michele. “Signs taken for wonders: AI, art & the matter of Race.” Daedalus, vol. 151, no. 2, 2022, pp. 198–217, https://doi.org/10.1162/daed_a_01910. </p></div>
+                <div class="collapsible-body"><span id="annotation">Lorem ipsum dolor sit amet.</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header grey lighten-4 black-text"><p id="cite">Manzini, Thomas, et al. “Black is to criminal as Caucasian is to police: Detecting and removing multiclass bias in word embeddings.” Proceedings of the 2019 Conference of the North, 2019, https://doi.org/10.18653/v1/n19-1062. </p></div>
+                <div class="collapsible-body"><span id="annotation">Lorem ipsum dolor sit amet.</span></div>
+            </li>
+           
+            <li>
+                <div class="collapsible-header grey lighten-3 black-text"><p id="cite">Noble, Safiya Umoja. Algorithms of Oppression How Search Engines Reinforce Racism. New York University Press, 2018.</p></div>
+                <div class="collapsible-body"><span id="annotation">Lorem ipsum dolor sit amet.</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header grey lighten-4 black-text"><p id="cite">Nissim, Malvina, et al. “Fair is better than sensational: Man is to doctor as woman is to doctor.” Computational Linguistics, vol. 46, no. 2, June 2020, pp. 487–497, https://doi.org/10.1162/coli_a_00379. </p></div>
+                <div class="collapsible-body"><span id="annotation">Lorem ipsum dolor sit amet.</span></div>
+            </li>
+   
+            <li>
+                <div class="collapsible-header grey lighten-3 black-text"><p id="cite">Offert, Fabian, and Peter Bell. “Perceptual bias and technical metapictures: Critical Machine Vision as a Humanities Challenge.” AI &amp; SOCIETY, vol. 36, no. 4, 12 Oct. 2020, pp. 1133–1144, https://doi.org/10.1007/s00146-020-01058-z. </p></div>
+                <div class="collapsible-body"><span id="annotation">Lorem ipsum dolor sit amet.</span></div>
+            </li>
+
+            <li>
+                <div class="collapsible-header grey lighten-4 black-text"><p id="cite"></p></div>
+                <div class="collapsible-body"><span id="annotation">Lorem ipsum dolor sit amet.</span></div>
+            </li>
+          </ul>
+
+
+            <!-- <blockquote>
+                “Literature tends to resist representing history as the static, self-explanatory, sequential data points that are grist for predictive algorithms.” - Michele Elam
+            </blockquote> -->
+
+        <!-- <blockquote>
+            “The oldest poems in the Western tradition, the Iliad and the Odyssey, begin with an invocation to the muse, a plea for a mysterious, unfathomable other to enter the artist, taking over, conjuring language. GPT-3 is a mysterious, unfathomable other, taking over, conjuring language” - Stephen Marche
+        </blockquote> -->
+
+  
        <a class="btn-floating btn-large waves-effect waves-light transparent right" href="#mistral"><i class="material-icons white-text">arrow_forward</i></a>
     </section>
 
     <section class="hidden container" id="mistral">
         <br><br>
-        <h1>Mistral</h1>
+        <h1>case study: mistral</h1>
        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet debitis non error numquam harum facilis laudantium itaque, asperiores voluptatem ipsum vero, placeat quaerat optio reprehenderit consectetur quasi enim obcaecati quas.</p>
        <a class="btn-floating btn-large waves-effect waves-light transparent right" href="#redteaming"><i class="material-icons white-text">arrow_forward</i></a>
     </section>
@@ -87,6 +165,23 @@
        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet debitis non error numquam harum facilis laudantium itaque, asperiores voluptatem ipsum vero, placeat quaerat optio reprehenderit consectetur quasi enim obcaecati quas.</p>
        <a class="btn-floating btn-large waves-effect waves-light transparent right" href="#start"><i class="material-icons white-text">arrow_forward</i></a>
     </section>
+
+    <section class="hidden container" id="quotes">
+        <br><br>
+        <h1>quotes</h1>
+        <p>"literature does
+            not aspire to a seamless user experience. In fact, it turns our attention
+            to those <u>seams we are seduced into not seeing</u>" (Elam 284)</p>
+
+        <p>"it is
+            as if we are being forced to live in the imagination of a very few" - Ruha Benjamin</p>
+       
+        <p>"AI, like all technologies,
+            is a crucible of our world views, our social priorities, commitments,
+            investments, and aspirations. As such, perhaps one of its greatest uses
+            is to allow it to reflect us back to ourselves." -Michele Elam</p>
+
+        <p>"In accepting large amounts of web text as ‘representative’ of ‘all’ of humanity we risk perpetuating dominant viewpoints, increasing power imbalances, and further reifying inequality” - Emily Bender et al        </p>
     
 </body>
 

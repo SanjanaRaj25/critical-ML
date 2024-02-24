@@ -3,11 +3,15 @@ html{
 }
 
 body {
-    background-color: #1b1b21;
+    background-color: rgb(8, 6, 56);
     color: #ffffff;
     font-family: 'Courier New', Courier, monospace;
     padding: 0;
     margin: 0;
+}
+
+.nav-wrapper{
+    background-color: rgb(8, 6, 56);
 }
 
 section {
@@ -28,3 +32,46 @@ section {
     filter: blur(0);
     transform: translateX(0);
 }
+
+.carousel{
+    border: 1px solid rgb(61, 59, 59);
+}
+
+#cite{
+    font-size: 9px; 
+    font-style: italic;
+}
+
+#annotation{
+    font-size: 12px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.collapsible-header{
+    color:black;
+}
+ #glass{
+    background: rgba(255, 250, 255, 0.05);
+    box-shadow: 0 2px 2px 0 rgba(163, 166, 214, 0.37);
+    padding: 30px;
+    backdrop-filter: blur( 8px );
+    -webkit-backdrop-filter: blur( 8px );
+    border-radius: 10px;
+    display: flex;
+    height: 100%;
+ }
+
+
+ .blockquote{
+    padding: 10px;
+    font-style: italic;
+ }
+
+ .title {
+    font-size: 60px; 
+    font-style: bold; 
+    letter-spacing: .2rem;
+    margin: auto;
+    color: white;
+    text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+  }
