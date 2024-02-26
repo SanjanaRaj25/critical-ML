@@ -75,53 +75,56 @@
 
             <li>
                 <div class="collapsible-header grey lighten-4 black-text"><p id="cite">Birhane, Abeba, Vinay Uday Prabhu, and Emmanuel Kahembwe. "Multimodal datasets: misogyny, pornography, and malignant stereotypes." arXiv preprint arXiv:2110.01963 (2021).</p></div>
-                <div class="collapsible-body"><span id="annotation">Lorem ipsum dolor sit amet.</span></div>
+                <div class="collapsible-body">
+                    <p class="blockquote" id="glass">“The culture in machine learning is such that ideas that promise improvements in training speed, model size or top-k accuracy improvements are rapidly embraced while ideas and revelations pertaining to unethical aspects of datasets are either ignored or take a long time to lead to changes (10)”</p>
+                    <span id="annotation">This text grounds itself in the current moment of the “multi-modality drive” within AI. It describes the “vision-text dyad” as tuples containing an image, a textual description of the image, and the image’s meta-data. The data-set of these dyads is described as “internet sized,” produced by crawling the web. Broad problems in these datasets include bias in curation, problematic content within images, and labels that are imbued with bias. The “Common Crawl” is an organization that regularly crawls the World Wide Web and generates datasets of “snapshot data-dumps” that are frequently used in training pipelines for projects such as GPT-3. The most recent CommonCrawl contained “over 200,000 documents from unreliable news sites and banned subreddit pages containing hate speech and racism” (Birhane et al 3). In this study, Birhane, Prabhu, and Kahembwe analyze the LAION-400M dataset (a multimodal filtered version of the Common-Crawl dataset). When querying the dataset with non-NSFW queries, they found a high ratio of results containing explicit content and sexual violence (even after CLIP filtering). The creation of the dataset is split into 3 steps: the drive for creation, a large base source, and a filtering mechanism. With LAION-400M, images are filtered out based on the cosine similarity between the text-description and the image embeddings. The authors note that this allows the downstream propagation of offensive mis-associations. They offer examples where the cosine similarity of offensive and inaccurate labels and an image were higher. There is an asymmetry between the cheapness of mining and aggregating large datasets and the high labor cost to filter it and detoxify it downstream. The authors note the large discrepancy between how fast people adopt new approaches in training speed or model size, while ignoring revelations about ethics within datasets or ML. They note the emotional toll of sifting through a dataset filled with NSFW and violent images. In the era of deep learning, large-scale AI models can be viewed as “compressed representations” of their training data. Even once a model is fine tuned and specialized, this data is still disseminated to users downstream. The text critiques the assumption that Artificial General Intelligence should be obtained by training models with “all available data” when that data contains images and text that are racially violent, illegal, and misrepresentative. What do we gain by feeding models images of sexual violence? Automatic filtering mechanisms always have a non-zero error rate, and at the scale of billions of data points, this has significant ethical implications.</span>
+                </div>
             </li>
             <li>
                 <div class="collapsible-header grey lighten-3 black-text"><p id="cite">Chun, Wendy Hui Kyong. Programmed Visions: Software and Memory. Cambridge: MIT Press, 2011.</p></div>
-                <div class="collapsible-body"><span id="annotation">Lorem ipsum dolor sit amet.</span></div>
+                <div class="collapsible-body"><p class="blockquote" id="glass">PUT QUOTE HERE</p><span id="annotation">Lorem ipsum dolor sit amet.</span></div>
             </li>
             <li>
                 <div class="collapsible-header grey lighten-4 black-text"><p id="cite">Dobson, James E. The Birth of Computer Vision. University of Minnesota Press, 2023.</p></div>
-                <div class="collapsible-body"><span id="annotation">Lorem ipsum dolor sit amet.</span></div>
+                <div class="collapsible-body"><p class="blockquote" id="glass">PUT QUOTE HERE</p><span id="annotation">Lorem ipsum dolor sit amet.</span></div>
             </li>
             
             <li>
                 <div class="collapsible-header grey lighten-3 black-text"><p id="cite">Dobson, J.E. On reading and interpreting black box deep neural networks. Int J Digit Humanities 5, 431–449 (2023). https://doi.org/10.1007/s42803-023-00075-w.</p></div>
-                <div class="collapsible-body"><span id="annotation">Lorem ipsum dolor sit amet.</span></div>
+                <div class="collapsible-body"><p class="blockquote" id="glass">PUT QUOTE HERE</p><span id="annotation">Lorem ipsum dolor sit amet.</span></div>
             </li>
             <li>
               <div class="collapsible-header grey lighten-4 black-text"><p id="cite">Elam, Michele. “Poetry will not optimize; or, what is literature to AI?” American Literature, vol. 95, no. 2, 17 Mar. 2023, pp. 281–303, https://doi.org/10.1215/00029831-10575077. </p></div>
-              <div class="collapsible-body"><div id="glass">AI, like all technologies, is a crucible of our world views, our social priorities, commitments, investments, and aspirations. As such, perhaps one of its greatest usesis to allow it to reflect us back to ourselves (295)</div><span id="annotation">Elam argues that AI-generated and augmented literature cannot be dismissed. Although writing generated by LLMs can sometimes seem eerily similar to what a human might produce, there are key distinctions. The “database” cannot tolerate data that is indeterminate, unspeakable, though that is precisely what narrative seeks to reveal. The computer embodies the “view from nowhere”— it is implied to be omniscient and ahistorical, while the human narrative acknowledges the subjective view, grounded by context and place. The first section of the text recounts the “literary consequences of algorithmic ahistoricity.” Literature does not represent history as a linear series of data points, but as a “palimpsest,” or an “ongoing  and dynamic negotiation between pasts and presents” (Elam 286). Conversely, the data used in training sets is reduced to something the computer can interpret. For instance, when GPT-3 was asked to continue lines of a Maya Angelou poem, the output was a mishmash of Black vernacular across periods of time and expressions that were incoherent together. Language is significant because it carries a certain frame of existence. It “indexes experience, and form takes the shape of its need” (Elam 288). AI generated language reduces the reader’s ability to see and understand their own realities and experiences. It can perhaps perform literature, but cannot capture its meaning. AI databases present “neutral descriptions of the world rather than its own world.” (Elam 292). The world that AI portrays is one of many: with an embedded ontology and epistemology that cannot simply stand in for the world as a whole.
+              <div class="collapsible-body"><p class="blockquote" id="glass">PUT QUOTE HERE</p><div id="glass">AI, like all technologies, is a crucible of our world views, our social priorities, commitments, investments, and aspirations. As such, perhaps one of its greatest usesis to allow it to reflect us back to ourselves (295)</div><span id="annotation">Elam argues that AI-generated and augmented literature cannot be dismissed. Although writing generated by LLMs can sometimes seem eerily similar to what a human might produce, there are key distinctions. The “database” cannot tolerate data that is indeterminate, unspeakable, though that is precisely what narrative seeks to reveal. The computer embodies the “view from nowhere”— it is implied to be omniscient and ahistorical, while the human narrative acknowledges the subjective view, grounded by context and place. The first section of the text recounts the “literary consequences of algorithmic ahistoricity.” Literature does not represent history as a linear series of data points, but as a “palimpsest,” or an “ongoing  and dynamic negotiation between pasts and presents” (Elam 286). Conversely, the data used in training sets is reduced to something the computer can interpret. For instance, when GPT-3 was asked to continue lines of a Maya Angelou poem, the output was a mishmash of Black vernacular across periods of time and expressions that were incoherent together. Language is significant because it carries a certain frame of existence. It “indexes experience, and form takes the shape of its need” (Elam 288). AI generated language reduces the reader’s ability to see and understand their own realities and experiences. It can perhaps perform literature, but cannot capture its meaning. AI databases present “neutral descriptions of the world rather than its own world.” (Elam 292). The world that AI portrays is one of many: with an embedded ontology and epistemology that cannot simply stand in for the world as a whole.
             </span></div>
             
             </li>
             <li>
                 <div class="collapsible-header grey lighten-3 black-text"><p id="cite">Elam, Michele. “Signs taken for wonders: AI, art & the matter of Race.” Daedalus, vol. 151, no. 2, 2022, pp. 198–217, https://doi.org/10.1162/daed_a_01910. </p></div>
-                <div class="collapsible-body"><span id="annotation">Lorem ipsum dolor sit amet.</span></div>
+                <div class="collapsible-body"><p class="blockquote" id="glass">PUT QUOTE HERE</p><span id="annotation">Lorem ipsum dolor sit amet.</span></div>
             </li>
             <li>
                 <div class="collapsible-header grey lighten-4 black-text"><p id="cite">Manzini, Thomas, et al. “Black is to criminal as Caucasian is to police: Detecting and removing multiclass bias in word embeddings.” Proceedings of the 2019 Conference of the North, 2019, https://doi.org/10.18653/v1/n19-1062. </p></div>
-                <div class="collapsible-body"><span id="annotation">Lorem ipsum dolor sit amet.</span></div>
+                <div class="collapsible-body"><p class="blockquote" id="glass">PUT QUOTE HERE</p><span id="annotation">Lorem ipsum dolor sit amet.</span></div>
             </li>
            
             <li>
                 <div class="collapsible-header grey lighten-3 black-text"><p id="cite">Noble, Safiya Umoja. Algorithms of Oppression How Search Engines Reinforce Racism. New York University Press, 2018.</p></div>
-                <div class="collapsible-body"><span id="annotation">Lorem ipsum dolor sit amet.</span></div>
+                <div class="collapsible-body"><p class="blockquote" id="glass">PUT QUOTE HERE</p><span id="annotation">Lorem ipsum dolor sit amet.</span></div>
             </li>
             <li>
                 <div class="collapsible-header grey lighten-4 black-text"><p id="cite">Nissim, Malvina, et al. “Fair is better than sensational: Man is to doctor as woman is to doctor.” Computational Linguistics, vol. 46, no. 2, June 2020, pp. 487–497, https://doi.org/10.1162/coli_a_00379. </p></div>
-                <div class="collapsible-body"><span id="annotation">Lorem ipsum dolor sit amet.</span></div>
+                <div class="collapsible-body"><p class="blockquote" id="glass">PUT QUOTE HERE</p><span id="annotation">Lorem ipsum dolor sit amet.</span></div>
             </li>
    
             <li>
                 <div class="collapsible-header grey lighten-3 black-text"><p id="cite">Offert, Fabian, and Peter Bell. “Perceptual bias and technical metapictures: Critical Machine Vision as a Humanities Challenge.” AI &amp; SOCIETY, vol. 36, no. 4, 12 Oct. 2020, pp. 1133–1144, https://doi.org/10.1007/s00146-020-01058-z. </p></div>
-                <div class="collapsible-body"><span id="annotation">Lorem ipsum dolor sit amet.</span></div>
+                <div class="collapsible-body"><p class="blockquote" id="glass">PUT QUOTE HERE</p><span id="annotation">Lorem ipsum dolor sit amet.</span></div>
             </li>
 
             <li>
                 <div class="collapsible-header grey lighten-4 black-text"><p id="cite"></p></div>
-                <div class="collapsible-body"><span id="annotation">Lorem ipsum dolor sit amet.</span></div>
+                <div class="collapsible-body"><p class="blockquote" id="glass">PUT QUOTE HERE</p><span id="annotation">Lorem ipsum dolor sit amet.</span></div>
             </li>
           </ul>
 
